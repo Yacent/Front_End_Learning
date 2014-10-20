@@ -7,6 +7,7 @@ body {
 
 .container {
 	background-color: #FFFFFF;
+	width: 1200px;
 }
 
 .header {
@@ -89,13 +90,7 @@ body {
 	padding-right: 5px;
 }
 
-.username button#user {
-	border: none;
-	background: none;
-	color: #585858;
-}
-
-.username button#power {
+.username button#user, button#power {
 	border: none;
 	background: none;
 	color: #585858;
@@ -148,10 +143,153 @@ body {
 	text-align: center;
 }
 
-.nav a:hover, p:hover {
+.nav a:hover {
 	color: #FFFFFF;
 }
 
 .nav li:hover, .current {
 	background-color: #080808;
+}
+
+.content {
+	width: 930px;
+	background-color: #FFF;
+	display: inline-block;
+}
+
+.bar {
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+
+.bar p.back {
+	margin: 0;
+	height: 150px;
+	position: relative;
+}
+
+.bar p.word {
+	margin: 0;
+	position: absolute;
+	top: 37px;
+	left: 22px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #C8C8C8;
+	line-height: 30px;
+}
+
+.bar .back span {
+	background-color: #080808;
+	border-radius: 5px;
+	opacity: 0.8;
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	right: 33px;
+	width: 40px;
+	text-align: center;
+	line-height: 22px;
+}
+
+.bar .word span {
+	font-size: 45px;
+	color: #E8E8E8;
+}
+
+.bar i {
+	background: none;
+	border: none;
+	color: #A8A8A8;
+	font-size: 20px;
+}
+
+.bar i:hover {
+	color: #FFF;
+}
+
+.bar:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.bar i[name="left"] {
+	margin-right: 5px;
+}
+
+.bar i[name="right"] {
+	margin-left: 5px;
+}
+
+.left_block {
+	width: 465px;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.post {
+	margin: 40px 15px 20px 25px;
+	display: inline-block;
+	padding: 0;
+	width: 420px;
+	height: 120px;
+	position: relative;
+}
+
+.post form {
+	border: none;
+	width: 420px;
+	height: 80px;
+}
+
+.post input[name="post_unit"] {
+	border: 2px solid #E8E8E8;
+	background: transparent;
+	width: 416px;
+	height: 75px;
+	border-radius: 3px;
+}
+
+.post p {
+	width: 360px;
+	height: 40px;
+	margin: 0;
+	position: relative;
+	background-color: #E8E8E8;
+	float: left;
+}
+
+.post i {
+	color: #A8A8A8;
+}
+
+.post i[name="location"] {
+	position: absolute;
+	top: 12px;
+	left: 18px;
+}
+
+.post i[name="image"] {
+	position: absolute;
+	top: 13px;
+	left: 41px;
+}
+
+.post button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 60px;
+	height: 40px;
+	float: left;
+	background-color: #38A6A7;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.post i[name="point_right"] {
+	color: #FFF;
 }
