@@ -476,7 +476,7 @@ button:hover {
 	display: inline-block;
 	height: 40px;
 	position: relative;
-	width: 75px
+	width: 55px
 }
 
 .heart span, .comment span {
@@ -487,12 +487,12 @@ button:hover {
 .vocation {
 	display: inline-block;
 	height: 40px;
-	width: 254px;
+	width: 270px;
 }
 
 .vocation i {
 	color: #A0A0A0;
-	margin-left: 160px;
+	margin-left: 200px;
 }
 
 .vocation span {
